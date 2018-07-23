@@ -21,6 +21,11 @@ var config = {
                 query:{
                     presets:["react","es2015","stage-2"]
                 }
+            },
+            {
+                include: SRC_DIR,
+                test:/\.css$/,
+                use:['style-loader','css-loader']
             }
         ]
     }
